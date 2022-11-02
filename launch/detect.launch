@@ -1,0 +1,21 @@
+<launch>
+  <arg name="display" default="false" />
+  <arg name="record" default="true" />
+  <arg name="compressed" default="true" />
+  <arg name="stream" default="true" />
+  <arg name="address" default="tcp://0.0.0.0:5555" />
+  <arg name="topic_name" default="/camera/color/image_rawww" />
+  <arg name="threshold" default="0.3" />
+
+  <node pkg="pycoral_ros" name="detector" type="detect_coral" output="screen">
+    <param name="model_path" value="$(find pycoral_ros)/models/efficientdet-lite2-addv2-83e_edgetpu.tflite" />
+    <param name="label_path" value="$(find pycoral_ros)/models/add_labelsv2.txt" />
+    <param name="compressed" value="$(arg compressed)" />
+    <param name="topic_name" value="$(arg topic_name)"/>
+    <param name="display" value="$(arg display)"/>
+    <param name="stream" value="$(arg stream)" />
+    <param name="address" value="$(arg address)" />
+    <param name="threshold" value="$(arg threshold)" />
+  </node>
+
+</launch>

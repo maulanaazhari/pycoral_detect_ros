@@ -1,0 +1,19 @@
+<launch>
+  <arg name="display" default="false" />
+  <arg name="record" default="true" />
+  <arg name="compressed" default="true" />
+  <arg name="topic_name" default="/usb_cam/image_raw" />
+
+<node 
+          name="detections_view" 
+          pkg="image_view"
+          type="image_view"
+          respawn="false"
+          output="screen">
+          
+      <remap from="image" to="/detections_image" />
+      <param name="~autosize" value="true"/>
+
+    </node>
+
+</launch>

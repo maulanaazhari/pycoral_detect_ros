@@ -1,0 +1,7 @@
+0 person
+1 stretcher
+2 computer
+3 desk
+4 communication equipment
+5 weapon storage
+6 barbed wire

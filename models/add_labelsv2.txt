@@ -1,0 +1,7 @@
+0 person
+1 person rotated
+2 stretcher
+3 computer
+4 communication equipment
+5 weapon storage
+6 barbed wire
