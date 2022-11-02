@@ -136,3 +136,6 @@ The video results can be seen in here: https://drive.google.com/drive/folders/1-
 | EfficientDet Lite1 | 70-80 ms | 68-74 ms | 34.3% |
 | EfficientDet Lite2 | 120-130 ms | 120-127 ms | 36.0% |
 | EfficientDet Lite3 | 140-160 ms | 135-148 ms | 39.4% |
+
+## 4. TODO
+- Create separate packages for pycoral_det, det_msgs (including srv), and 3D localization
