@@ -129,7 +129,7 @@ You can set various parameters in the detection launch file, such as:
 ## 3. Results
 The video results can be seen in here: https://drive.google.com/drive/folders/1-NOWcU_wW81T5LQAPTITuM8CmTb11Yw3?usp=sharing
 
-| Model Name | Inference Time (i7-6700) | Inference Time (DARPA-NUC) | mAP in COCO |
+| Model Name | Inference Time (i7-6700) | Inference Time (NUC) | mAP in COCO |
 | ---------- | -------------- | -------------- | ----------- |
 | SSD Mobilenet V2 | 10-12 ms | 10-11 ms | 25.6% |
 | SSDLite MobileDet | 12-14 ms | 12-13 ms | 32.9% |
